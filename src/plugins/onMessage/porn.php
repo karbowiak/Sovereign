@@ -190,6 +190,9 @@ class porn extends \Threaded implements \Collectable
                 case "bbw":
                     $urls = array("https://api.imgur.com/3/gallery/r/bbw/time/all/");
                     break;
+                case "bigass":
+                    $urls = array("https://api.imgur.com/3/gallery/r/bigass/time/all/");
+                    break;
                 case "cheese":
                 case "dick":
                 case "dong":
