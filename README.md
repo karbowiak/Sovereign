@@ -1,3 +1,4 @@
+[![Build Status](https://scrutinizer-ci.com/g/sovereignbot/citadel/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sovereignbot/citadel/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sovereignbot/citadel/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sovereignbot/citadel/?branch=master)
 [![Code Climate](https://codeclimate.com/github/sovereignbot/citadel/badges/gpa.svg)](https://codeclimate.com/github/sovereignbot/citadel)
 [![Issue Count](https://codeclimate.com/github/sovereignbot/citadel/badges/issue_count.svg)](https://codeclimate.com/github/sovereignbot/citadel)
