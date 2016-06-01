@@ -67,17 +67,10 @@ class SystemPluginServiceProvider extends AbstractServiceProvider implements Boo
         // onVoice plugins
         $app->addPlugin('onVoice', 'reapers', "\\Sovereign\\Plugins\\onVoice\\reapers", 1, 'Plays a random quote from Sovereign', '', null);
         $app->addPlugin('onVoice', 'horn', "\\Sovereign\\Plugins\\onVoice\\horn", 1, 'Horns. Just horns..', '', null);
-        $app->addPlugin('onVoice', 'pause', "\\Sovereign\\Plugins\\onVoice\\pause", 1, 'Pauses audio playback', '', null);
-        $app->addPlugin('onVoice', 'stop', "\\Sovereign\\Plugins\\onVoice\\stop", 1, 'Stops audio playback', '', null);
-        $app->addPlugin('onVoice', 'next', "\\Sovereign\\Plugins\\onVoice\\next", 1, 'Goes to the next track if radio90s is playing', '', null);
-        $app->addPlugin('onVoice', 'unpause', "\\Sovereign\\Plugins\\onVoice\\unpause", 1, 'Resumes audio playback', '', null);
-        $app->addPlugin('onVoice', 'resume', "\\Sovereign\\Plugins\\onVoice\\unpause", 1, 'Resumes audio playback', '', null);
         $app->addPlugin('onVoice', 'warnings', "\\Sovereign\\Plugins\\onVoice\\warnings", 1, 'Plays a random warning sound from EVE-Online', '', null);
         $app->addPlugin('onVoice', 'unleashthe90s', "\\Sovereign\\Plugins\\onVoice\\unleashthe90s", 1, 'Plays a random 90s song', '', null);
         $app->addPlugin('onVoice', 'radio90s', "\\Sovereign\\Plugins\\onVoice\\radio90s", 1, 'Keeps on playing 90s songs, till you go !stop', '', null);
         $app->addPlugin('onVoice', 'radio', "\\Sovereign\\Plugins\\onVoice\\radio", 1, 'Keeps on playing a Radio station, till you go !stop', '', null);
-        $app->addPlugin('onVoice', 'youtube', "\\Sovereign\\Plugins\\onVoice\\youtube", 1, 'Plays whatever is linked in the youtube link', '<youtubeLink>', null);
-        $app->addPlugin('onVoice', 'yt', "\\Sovereign\\Plugins\\onVoice\\youtube", 1, 'Plays whatever is linked in the youtube link', '<youtubeLink>', null);
 
         // Attempt to register any configured service providers
         $config = $this->getContainer()->get('config');
