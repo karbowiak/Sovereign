@@ -74,7 +74,7 @@ class SystemPluginServiceProvider extends AbstractServiceProvider implements Boo
 
         // Attempt to register any configured service providers
         $config = $this->getContainer()->get('config');
-        $providers = $config->get('serviceProviders');
+        $providers = $config->getAll('serviceproviders');
         if (!empty($providers)) {
             foreach ($providers as $class) {
                 $this->getContainer()->addServiceProvider($class);

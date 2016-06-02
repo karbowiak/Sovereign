@@ -26,7 +26,6 @@
     "ext-pthreads": ">=3.1.0",
     "team-reflex/discord-php": "dev-develop",
     "monolog/monolog": "1.19.*",
-    "norkunas/youtube-dl-php": "0.2.*",
     "league/container": "^2.2",
     "symfony/console": "^3.1"
   },

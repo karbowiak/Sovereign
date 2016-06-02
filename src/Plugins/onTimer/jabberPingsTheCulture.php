@@ -103,7 +103,7 @@ class jabberPingsTheCulture extends \Threaded implements \Collectable
             /** @var Channel $channel */
             $channel = Channel::find($channelID);
             $this->log->addInfo("Sending ping to #pings on The Culture");
-            $channel->sendMessage("@everyone " . $message);
+            $channel->sendMessage("@everyone " . $message, false);
         }
     }
 }
