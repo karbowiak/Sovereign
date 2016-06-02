@@ -88,10 +88,6 @@ class Sovereign
      */
     private $timers;
     /**
-     * @var \Pool
-     */
-    public $voice;
-    /**
      * @var array
      */
     private $audioStreams;
