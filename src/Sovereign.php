@@ -155,12 +155,6 @@ class Sovereign
     {
         // Reap the threads!
         $this->websocket->loop->addPeriodicTimer(600, function () {
-            // Only restart the audioStream pool if it's actually empty..
-            if (empty($this->voice)) {
-                $this->voice->shutdown();
-                $this->voice = new \Pool(24, \Worker::class);
-            }
-
             $this->log->addInfo('Restarting the threading pool, to clear out old threads..');
 
             // Shutdown the pool
