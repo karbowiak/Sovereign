@@ -87,6 +87,15 @@ class jabberPingsTheCulture extends \Threaded implements \Collectable
             }
         }
 
+        flock($handle, LOCK_UN);
+        fclose($handle);
+        $handle = fopen("/tmp/discord.db", "w+");
+        fclose($handle);
+        chmod("/tmp/discord.db", 0777);
+        $data = null;
+        $handle = null;
+        clearstatcache();
+
         if (!empty($message)) {
             // Strip out the last |
             $message = trim(substr($message, 0, -2));
@@ -96,14 +105,5 @@ class jabberPingsTheCulture extends \Threaded implements \Collectable
             $this->log->addInfo("Sending ping to #pings on The Culture");
             $channel->sendMessage("@everyone " . $message);
         }
-
-        flock($handle, LOCK_UN);
-        fclose($handle);
-        $handle = fopen("/tmp/discord.db", "w+");
-        fclose($handle);
-        chmod("/tmp/discord.db", 0777);
-        $data = null;
-        $handle = null;
-        clearstatcache();
     }
 }
